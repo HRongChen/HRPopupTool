@@ -1,0 +1,6 @@
+framework module HRPopup {
+  umbrella header "HRPopup-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - HRPopup (0.1.0)
+
+DEPENDENCIES:
+  - HRPopup (from `../`)
+
+EXTERNAL SOURCES:
+  HRPopup:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HRPopup: e21b77a3ff94345f95e3a5f667896a8c8c5b1894
+
+PODFILE CHECKSUM: 27ca1029398a312bf56a0a42b7c4079c1f2d0f0c
+
+COCOAPODS: 1.8.4
