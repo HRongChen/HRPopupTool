@@ -1,6 +1,6 @@
 # HRPopup
 
-[![CI Status](https://img.shields.io/travis/HRChen/HRPopup.svg?style=flat)](https://travis-ci.org/华荣 陈/HRPopup)
+
 [![Version](https://img.shields.io/cocoapods/v/HRPopup.svg?style=flat)](https://cocoapods.org/pods/HRPopup)
 [![License](https://img.shields.io/cocoapods/l/HRPopup.svg?style=flat)](https://cocoapods.org/pods/HRPopup)
 [![Platform](https://img.shields.io/cocoapods/p/HRPopup.svg?style=flat)](https://cocoapods.org/pods/HRPopup)

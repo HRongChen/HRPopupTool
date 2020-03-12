@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="H2p-WX-MpO">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="wQg-tq-qST">
+            <objects>
+                <viewController id="whP-gf-Uak" customClass="HRViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uEw-UM-LJ8"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GOq-YP-h1n">
+                                <rect key="frame" x="156.5" y="228.5" width="62" height="30"/>
+                                <state key="normal" title="立即弹窗"/>
+                                <connections>
+                                    <action selector="showNow:" destination="whP-gf-Uak" eventType="touchUpInside" id="7QT-uE-U5O"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yQ-CC-iRT">
+                                <rect key="frame" x="137" y="318.5" width="101" height="30"/>
+                                <state key="normal" title="Detail页面弹窗"/>
+                                <connections>
+                                    <action selector="showInDetail:" destination="whP-gf-Uak" eventType="touchUpInside" id="rE2-ef-ZB1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W8e-Om-XtH">
+                                <rect key="frame" x="137" y="408.5" width="101" height="30"/>
+                                <state key="normal" title="前往Detail页面"/>
+                                <connections>
+                                    <segue destination="hzA-AI-Nzj" kind="show" id="tow-au-9LS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="W8e-Om-XtH" firstAttribute="top" secondItem="1yQ-CC-iRT" secondAttribute="bottom" constant="60" id="10h-fJ-zL6"/>
+                            <constraint firstItem="GOq-YP-h1n" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="43Y-o5-7KE"/>
+                            <constraint firstItem="W8e-Om-XtH" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="Xp2-T5-n7c"/>
+                            <constraint firstItem="1yQ-CC-iRT" firstAttribute="centerY" secondItem="TpU-gO-2f1" secondAttribute="centerY" id="aWK-DN-Etp"/>
+                            <constraint firstItem="1yQ-CC-iRT" firstAttribute="top" secondItem="GOq-YP-h1n" secondAttribute="bottom" constant="60" id="nLv-OH-bJc"/>
+                            <constraint firstItem="1yQ-CC-iRT" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="o0t-IT-p5b"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="pmt-wD-OCp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1244" y="432.23388305847078"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ARD-Oq-gnf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="H2p-WX-MpO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iwP-Pn-Oaa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="whP-gf-Uak" kind="relationship" relationship="rootViewController" id="v25-hE-SaB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hve-un-AFu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.80000000000001" y="432.23388305847078"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="yHq-PW-Edz">
+            <objects>
+                <viewController id="hzA-AI-Nzj" customClass="HRDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="28v-AM-KLE"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jrr-05-Ky1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="875-Tv-7AM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fH3-D1-Bdi">
+                                <rect key="frame" x="156.5" y="228.5" width="62" height="30"/>
+                                <state key="normal" title="立即弹窗"/>
+                                <connections>
+                                    <action selector="showNow:" destination="hzA-AI-Nzj" eventType="touchUpInside" id="INy-Gm-twy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCh-ve-49c">
+                                <rect key="frame" x="156.5" y="318.5" width="62" height="30"/>
+                                <state key="normal" title="首页弹窗"/>
+                                <connections>
+                                    <action selector="showInHome:" destination="hzA-AI-Nzj" eventType="touchUpInside" id="X4y-yG-ZQ4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S7u-CA-4dd">
+                                <rect key="frame" x="156.5" y="408.5" width="62" height="30"/>
+                                <state key="normal" title="前往首页"/>
+                                <connections>
+                                    <action selector="goBack:" destination="hzA-AI-Nzj" eventType="touchUpInside" id="Ssz-4Z-ABc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="S7u-CA-4dd" firstAttribute="centerX" secondItem="875-Tv-7AM" secondAttribute="centerX" id="7rJ-xd-dAK"/>
+                            <constraint firstItem="fCh-ve-49c" firstAttribute="top" secondItem="fH3-D1-Bdi" secondAttribute="bottom" constant="60" id="8R2-8i-vdz"/>
+                            <constraint firstItem="fH3-D1-Bdi" firstAttribute="centerX" secondItem="875-Tv-7AM" secondAttribute="centerX" id="CG8-Ej-AIX"/>
+                            <constraint firstItem="S7u-CA-4dd" firstAttribute="top" secondItem="fCh-ve-49c" secondAttribute="bottom" constant="60" id="X9u-CS-0M4"/>
+                            <constraint firstItem="fCh-ve-49c" firstAttribute="centerX" secondItem="875-Tv-7AM" secondAttribute="centerX" id="ZME-nK-fhO"/>
+                            <constraint firstItem="fCh-ve-49c" firstAttribute="centerY" secondItem="875-Tv-7AM" secondAttribute="centerY" id="eAh-7J-5gR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Pls-0X-seb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nab-qH-d5O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1242" y="1092"/>
+        </scene>
+        <!--Alert View Controller-->
+        <scene sceneID="z85-ZB-19O">
+            <objects>
+                <viewController storyboardIdentifier="HRAlertViewController" id="IaU-oQ-nr0" customClass="HRAlertViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sN6-yY-HJp"/>
+                        <viewControllerLayoutGuide type="bottom" id="xT8-s5-gPd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="H6d-5S-f3H">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U4G-vp-0WI">
+                                <rect key="frame" x="67.5" y="262" width="240" height="143.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZm-yS-2d3">
+                                        <rect key="frame" x="0.0" y="53" width="240" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLP-gf-dCW">
+                                        <rect key="frame" x="89" y="83.5" width="62" height="30"/>
+                                        <state key="normal" title="点击消失"/>
+                                        <connections>
+                                            <action selector="dismiss:" destination="IaU-oQ-nr0" eventType="touchUpInside" id="hk7-ti-LfT"/>
+                                            <action selector="showNow:" destination="hzA-AI-Nzj" eventType="touchUpInside" id="wts-CP-jIY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="WLP-gf-dCW" firstAttribute="top" secondItem="aZm-yS-2d3" secondAttribute="bottom" constant="10" id="Hft-ae-Zj2"/>
+                                    <constraint firstItem="WLP-gf-dCW" firstAttribute="centerX" secondItem="U4G-vp-0WI" secondAttribute="centerX" id="Kj2-3h-PIf"/>
+                                    <constraint firstAttribute="bottom" secondItem="WLP-gf-dCW" secondAttribute="bottom" priority="750" constant="30" id="LYg-0q-Lmd"/>
+                                    <constraint firstItem="aZm-yS-2d3" firstAttribute="top" secondItem="U4G-vp-0WI" secondAttribute="top" constant="53" id="Yf1-Ga-nHq"/>
+                                    <constraint firstItem="aZm-yS-2d3" firstAttribute="leading" secondItem="U4G-vp-0WI" secondAttribute="leading" id="Z40-Lz-XY4"/>
+                                    <constraint firstAttribute="trailing" secondItem="aZm-yS-2d3" secondAttribute="trailing" id="ixE-SD-jyo"/>
+                                    <constraint firstAttribute="width" constant="240" id="yf1-Dm-8sr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="U4G-vp-0WI" firstAttribute="centerX" secondItem="H6d-5S-f3H" secondAttribute="centerX" id="jGz-Tj-gMm"/>
+                            <constraint firstItem="U4G-vp-0WI" firstAttribute="centerY" secondItem="H6d-5S-f3H" secondAttribute="centerY" id="kWm-6S-pHX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="U4G-vp-0WI" id="zd0-6a-WW0"/>
+                        <outlet property="descLabel" destination="aZm-yS-2d3" id="whb-Gw-Tji"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JAl-19-3ii" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="87" y="-265"/>
+        </scene>
+    </scenes>
+</document>

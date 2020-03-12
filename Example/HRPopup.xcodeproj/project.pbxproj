@@ -14,7 +14,6 @@
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* HRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* HRAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* HRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* HRViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -22,7 +21,10 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
-		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		8625D39C241A0B9500391B3A /* HRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8625D397241A0B9400391B3A /* HRViewController.m */; };
+		8625D39D241A0B9500391B3A /* HRAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8625D398241A0B9500391B3A /* HRAlertViewController.m */; };
+		8625D39E241A0B9500391B3A /* HRDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8625D399241A0B9500391B3A /* HRDetailViewController.m */; };
+		8625D3A0241A0BD200391B3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8625D39F241A0BD100391B3A /* Main.storyboard */; };
 		CA7962E09DF713E3CD1AF903 /* Pods_HRPopup_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FF298208A4FB6EB2C54FBB6 /* Pods_HRPopup_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,8 +55,6 @@
 		6003F59B195388D20070C39A /* HRPopup-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HRPopup-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* HRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HRAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* HRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HRAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* HRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HRViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* HRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HRViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* HRPopup_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HRPopup_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -65,7 +65,13 @@
 		6899B20900104E7A92C4C130 /* Pods-HRPopup_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HRPopup_Tests.debug.xcconfig"; path = "Target Support Files/Pods-HRPopup_Tests/Pods-HRPopup_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E050DFA925B0440754ABDDC /* Pods-HRPopup_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HRPopup_Example.debug.xcconfig"; path = "Target Support Files/Pods-HRPopup_Example/Pods-HRPopup_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8625D396241A0B9400391B3A /* HRDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRDetailViewController.h; sourceTree = "<group>"; };
+		8625D397241A0B9400391B3A /* HRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRViewController.m; sourceTree = "<group>"; };
+		8625D398241A0B9500391B3A /* HRAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRAlertViewController.m; sourceTree = "<group>"; };
+		8625D399241A0B9500391B3A /* HRDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRDetailViewController.m; sourceTree = "<group>"; };
+		8625D39A241A0B9500391B3A /* HRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRViewController.h; sourceTree = "<group>"; };
+		8625D39B241A0B9500391B3A /* HRAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRAlertViewController.h; sourceTree = "<group>"; };
+		8625D39F241A0BD100391B3A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		DE8F341B3DE1EB3ED78CE10A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,13 +138,17 @@
 		6003F593195388D20070C39A /* Example for HRPopup */ = {
 			isa = PBXGroup;
 			children = (
+				8625D39B241A0B9500391B3A /* HRAlertViewController.h */,
+				8625D398241A0B9500391B3A /* HRAlertViewController.m */,
 				6003F59C195388D20070C39A /* HRAppDelegate.h */,
 				6003F59D195388D20070C39A /* HRAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* HRViewController.h */,
-				6003F5A6195388D20070C39A /* HRViewController.m */,
-				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
+				8625D396241A0B9400391B3A /* HRDetailViewController.h */,
+				8625D399241A0B9500391B3A /* HRDetailViewController.m */,
+				8625D39A241A0B9500391B3A /* HRViewController.h */,
+				8625D397241A0B9400391B3A /* HRViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
+				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
+				8625D39F241A0BD100391B3A /* Main.storyboard */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = "Example for HRPopup";
@@ -277,10 +287,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				8625D3A0241A0BD200391B3A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,9 +374,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8625D39C241A0B9500391B3A /* HRViewController.m in Sources */,
 				6003F59E195388D20070C39A /* HRAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* HRViewController.m in Sources */,
+				8625D39E241A0B9500391B3A /* HRDetailViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				8625D39D241A0B9500391B3A /* HRAlertViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

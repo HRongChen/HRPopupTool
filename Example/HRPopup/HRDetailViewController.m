@@ -1,25 +1,31 @@
 //
-//  HRViewController.m
-//  HRPopup
+//  HRDetailViewController.m
+//  HRPopup_Example
 //
-//  Created by Gavin on 03/12/2020.
-//  Copyright (c) 2020 Gavin. All rights reserved.
+//  Created by Gavin on 2020/3/12.
+//  Copyright © 2020 华荣 陈. All rights reserved.
 //
 
+#import "HRDetailViewController.h"
 #import "HRViewController.h"
 #import <HRPopup/HRPopop.h>
+#import "HRViewController.h"
 #import "HRAlertViewController.h"
-#import "HRDetailViewController.h"
-@interface HRViewController ()
+@interface HRDetailViewController ()
 
 @end
 
-@implementation HRViewController
+@implementation HRDetailViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
+    // Do any additional setup after loading the view.
 }
+
+- (IBAction)goBack:(UIButton *)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 - (IBAction)showNow:(UIButton *)sender {
     HRPopupConfiguration *config = [[HRPopupConfiguration alloc] init];
     config.queueEnable = NO;
@@ -34,15 +40,14 @@
         return vc;
     }];
 }
-
-
-- (IBAction)showInDetail:(UIButton *)sender {
+- (IBAction)showInHome:(UIButton *)sender {
+    
     HRPopupConfiguration *config = [[HRPopupConfiguration alloc] init];
     config.queueEnable = YES;
     config.delayInterval = arc4random() % 2;
     config.showInterval = arc4random() % 3;
-    config.whiteList = @[@"HRDetailViewController"];
-    //    config.whiteList = @[NSStringFromClass(HRDetailViewController.class)];
+    config.whiteList = @[@"HRViewController"];
+    //    config.whiteList = @[NSStringFromClass(HRViewController.class)];
     [HRPopupManager showWithConfiguration:config
                               completionHandler:^UIViewController * _Nonnull(HRPopupService * _Nullable service) {
         HRAlertViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"HRAlertViewController"];
@@ -54,17 +59,6 @@
     }];
 }
 
-- (UIColor*)RandomColor {
-    
-    NSInteger aRedValue =arc4random() %255;
-    NSInteger aGreenValue =arc4random() %255;
-    NSInteger aBlueValue =arc4random() %255;
-    UIColor*randColor = [UIColor colorWithRed:aRedValue /255.0f
-                                        green:aGreenValue /255.0f
-                                         blue:aBlueValue /255.0f
-                                        alpha:1.0f];
-    
-    return randColor;
-    
-}
+
+
 @end

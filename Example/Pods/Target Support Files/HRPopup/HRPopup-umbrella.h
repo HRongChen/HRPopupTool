@@ -10,6 +10,12 @@
 #endif
 #endif
 
+#import "HRPopop.h"
+#import "HRPopupConfiguration.h"
+#import "HRPopupManager.h"
+#import "HRPopupService.h"
+#import "HRPopupTypeDeclaration.h"
+#import "HRPopupWindow.h"
 
 FOUNDATION_EXPORT double HRPopupVersionNumber;
 FOUNDATION_EXPORT const unsigned char HRPopupVersionString[];
