@@ -203,9 +203,6 @@
 
 - (nullable NSOperationQueue *)findQueueWithObject:(NSObject *)obj
 {
-    if (!obj) {
-        return nil;
-    }
     NSString * key = [NSString stringWithFormat:@"%@+%p",NSStringFromClass([obj class]),obj];
     NSOperationQueue * queue = nil;
     for (NSOperationQueue * tmpQ in self.queueList) {
