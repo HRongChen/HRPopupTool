@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/HRongChen/HRPopupTool.git",
-    "tag": "0.3.0"
+    "tag": "0.2.0"
   },
   "platforms": {
     "ios": "8.0"

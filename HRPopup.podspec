@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'HRPopup'
-    s.version          = '0.2.0'
+    s.version          = '0.3.0'
     s.summary          = '包含弹窗优先级、指定弹窗指定页面显示等功能的封装'
 
   # This description is used to generate tags and improve search results.
