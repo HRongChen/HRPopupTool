@@ -167,14 +167,12 @@
 {
     NSOperationQueue * queue = [[HRPopupManager sharedManager] findQueueWithObject:obj];
     queue.suspended = YES;
-    [HRPopupManager sharedManager].globalQueue.suspended = YES;
 }
 
 + (void)continueQueueWithObj:(NSObject *)obj
 {
     NSOperationQueue * queue = [[HRPopupManager sharedManager] findQueueWithObject:obj];
     queue.suspended = NO;
-    [HRPopupManager sharedManager].globalQueue.suspended = NO;
 }
 
 + (void)canclAllOperationsWithVC:(UIViewController *)vc
