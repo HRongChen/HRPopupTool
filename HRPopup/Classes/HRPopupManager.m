@@ -15,6 +15,7 @@
 @interface HRPopupManager()
 @property (nonatomic, strong) NSMutableArray<HRPopupService*> *services;//加入队列的服务
 @property (nonatomic, strong) NSMutableArray<NSOperationQueue*> *queueList;//队列数组
+@property (nonatomic, strong) NSOperationQueue *globalQueue;
 @end
 
 @implementation HRPopupManager
@@ -87,7 +88,12 @@
     
     //存在检测，如果队列中已存在需要show的view则不显示
     BOOL isContain = NO;
-    NSOperationQueue * queue = [manager getQueueWithObject:obj];
+    NSOperationQueue *queue;
+    if (whiteList.count > 0 || obj == nil) {
+        queue = manager.globalQueue;
+    }else{
+        queue = [manager getQueueWithObject:obj];
+    }
     for (HRPopupOperation * op in [queue operations]) {
         if ([op isEqual:service.operation]) {
             isContain = YES;
@@ -259,6 +265,16 @@
         _services = [[NSMutableArray<HRPopupService*> alloc] init];
     }
     return _services;
+}
+
+
+- (NSOperationQueue *)globalQueue {
+    if (!_globalQueue) {
+        _globalQueue = [[NSOperationQueue alloc] init];
+        _globalQueue.name = @"globalQueue";
+        _globalQueue.maxConcurrentOperationCount = 1;
+    }
+    return _globalQueue;
 }
 
 @end
