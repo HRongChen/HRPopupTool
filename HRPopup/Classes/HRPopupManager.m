@@ -89,7 +89,7 @@
     //存在检测，如果队列中已存在需要show的view则不显示
     BOOL isContain = NO;
     NSOperationQueue *queue;
-    if (whiteList.count > 0 || obj == nil) {
+    if (whiteList.count <= 0 || obj == nil) {
         queue = manager.globalQueue;
     }else{
         queue = [manager getQueueWithObject:obj];
@@ -103,16 +103,6 @@
     //存在直接返回
     if (isContain) {
         return;
-    }
-    
-    if (service.configuration.cancelCurrentShow) {
-        [queue.operations enumerateObjectsUsingBlock:^(__kindof NSOperation * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            HRPopupOperation *item = obj;
-            if ([item isExecuting]) {
-                [item.currentService dismiss];
-                *stop = YES;
-            }
-        }];
     }
     HRPopupOperation * op = [[HRPopupOperation alloc ]init];
     switch (service.configuration.showPriority) {
@@ -135,6 +125,15 @@
     service.operation = op;
     op.currentService = service;
     [queue addOperation:op];
+    if (service.configuration.cancelCurrentShow) {
+        [queue.operations enumerateObjectsUsingBlock:^(__kindof NSOperation * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            HRPopupOperation *item = obj;
+            if ([item isExecuting]) {
+                [item.currentService dismiss];
+                *stop = YES;
+            }
+        }];
+    }
     return;
 }
 
@@ -168,12 +167,14 @@
 {
     NSOperationQueue * queue = [[HRPopupManager sharedManager] findQueueWithObject:obj];
     queue.suspended = YES;
+    [HRPopupManager sharedManager].globalQueue.suspended = YES;
 }
 
 + (void)continueQueueWithObj:(NSObject *)obj
 {
     NSOperationQueue * queue = [[HRPopupManager sharedManager] findQueueWithObject:obj];
     queue.suspended = NO;
+    [HRPopupManager sharedManager].globalQueue.suspended = NO;
 }
 
 + (void)canclAllOperationsWithVC:(UIViewController *)vc
