@@ -1,5 +1,5 @@
 PODS:
-  - HRPopup (0.3.1)
+  - HRPopup (0.3.3)
 
 DEPENDENCIES:
   - HRPopup (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  HRPopup: d6d34050d61aedb119c03b15b599561aea9fff38
+  HRPopup: 2505faa41db718b6172da8e2c6ba976280b19e9e
 
 PODFILE CHECKSUM: 27ca1029398a312bf56a0a42b7c4079c1f2d0f0c
 

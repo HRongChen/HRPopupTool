@@ -9,6 +9,7 @@
 #import "HRPopupService.h"
 #import "HRPopupWindow.h"
 #import "HRPopupConfiguration.h"
+#import "UIViewController+HRPopup.h"
 @interface HRPopupService ()
 @property (nonatomic, copy, nullable)HRPopupExecuteHandler executeHandler;
 @end
@@ -42,7 +43,12 @@
         window;
     });
     _containerWindow.hidden = NO;
-    _containerWindow.rootViewController = self.executeHandler(self);
+    UIViewController *vc = self.executeHandler(self);
+    __weak typeof(self) weakSelf = self;
+    vc.hr_deallocHandler = ^{
+        [weakSelf.operation completion];
+    };
+    _containerWindow.rootViewController = vc;
 }
 
 - (void)dismiss {
@@ -52,7 +58,6 @@
     _containerWindow.rootViewController = nil;
     _containerWindow.hidden = YES;
     _containerWindow = nil;
-    [_operation completion];
 }
 
 

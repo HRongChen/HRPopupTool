@@ -17,7 +17,7 @@
         _delayInterval = 0;
         _showInterval = 0;
         _cancelCurrentShow = NO;
-        _windowLevel = UIWindowLevelAlert;
+        _windowLevel = UIWindowLevelNormal;
         _queueEnable = YES;
     }
     return self;

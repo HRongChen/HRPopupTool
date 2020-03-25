@@ -9,4 +9,4 @@
 @class HRPopupService;
 
 typedef UIViewController*_Nonnull(^HRPopupExecuteHandler)(HRPopupService *_Nullable service);
-
+typedef void(^HRPopupDeallocHandler)(void);

@@ -20,7 +20,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 + (instancetype)sharedManager;
-
++ (void)continueQueueWithObj:(NSObject *)obj;
++ (void)suspendQueueWithObj:(NSObject *)obj;
++ (void)canclAllOperationsWithVC:(UIViewController *)vc;
++ (void)showPopupViewWaitDisplayWithVC:(UIViewController *)vc;
 + (void)showWithConfiguration:(nullable HRPopupConfiguration *)configuration
             completionHandler:(HRPopupExecuteHandler)executeHandler;
 
