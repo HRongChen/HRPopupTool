@@ -10,7 +10,6 @@
 #import "HRPopupService.h"
 #import "HRPopupConfiguration.h"
 #import "HRPopupWindow.h"
-#import <objc/runtime.h>
 
 @interface HRPopupManager()
 @property (nonatomic, strong) NSMutableArray<HRPopupService*> *services;//加入队列的服务
