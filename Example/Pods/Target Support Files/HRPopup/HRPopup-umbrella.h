@@ -16,6 +16,7 @@
 #import "HRPopupService.h"
 #import "HRPopupTypeDeclaration.h"
 #import "HRPopupWindow.h"
+#import "UIViewController+HRPopup.h"
 
 FOUNDATION_EXPORT double HRPopupVersionNumber;
 FOUNDATION_EXPORT const unsigned char HRPopupVersionString[];
