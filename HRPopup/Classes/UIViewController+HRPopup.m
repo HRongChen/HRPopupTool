@@ -8,7 +8,9 @@
 #import "UIViewController+HRPopup.h"
 #import "HRPopupManager.h"
 #import <objc/runtime.h>
+
 static char deallocKey;
+
 @implementation UIViewController(HRPopup)
 + (void)load {
     hr_swizzling_exchangeMethod([self class],
@@ -67,4 +69,5 @@ static inline void hr_swizzling_exchangeMethod(Class clazz, SEL originalSelector
     [HRPopupManager canclAllOperationsWithVC:self];
     [self hr_dealloc];
 }
+
 @end

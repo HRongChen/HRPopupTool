@@ -10,7 +10,7 @@
 #endif
 #endif
 
-#import "HRPopop.h"
+#import "HRPopup.h"
 #import "HRPopupConfiguration.h"
 #import "HRPopupManager.h"
 #import "HRPopupService.h"

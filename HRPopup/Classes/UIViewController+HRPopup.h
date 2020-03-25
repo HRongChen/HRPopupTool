@@ -5,7 +5,7 @@
 //  Created by Gavin on 2020/3/25.
 //
 #import <UIKit/UIKit.h>
-#import "HRPopupTypeDeclaration.h"
+#import "HRPopupManager.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UIViewController (HRPopup)

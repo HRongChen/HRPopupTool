@@ -8,7 +8,7 @@
 
 #import "HRDetailViewController.h"
 #import "HRViewController.h"
-#import <HRPopup/HRPopop.h>
+#import <HRPopup/HRPopup.h>
 #import "HRViewController.h"
 #import "HRAlertViewController.h"
 @interface HRDetailViewController ()
