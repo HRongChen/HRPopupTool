@@ -9,11 +9,11 @@
 #import "HRPopupManager.h"
 #import <objc/runtime.h>
 static char deallocKey;
-@implementation  UIViewController(HRPopup)
+@implementation UIViewController(HRPopup)
 + (void)load {
     hr_swizzling_exchangeMethod([self class],
-                                @selector(viewDidAppear:),
-                                @selector(hr_popup_viewDidAppear:));
+                                @selector(viewWillAppear:),
+                                @selector(hr_popup_viewWillAppear:));
     hr_swizzling_exchangeMethod([self class],
                                 @selector(viewWillDisappear:),
                                 @selector(hr_popup_viewWillDisappear:));
@@ -45,8 +45,8 @@ static inline void hr_swizzling_exchangeMethod(Class clazz, SEL originalSelector
 }
 
 
-- (void)hr_popup_viewDidAppear:(BOOL)animated {
-    [self hr_popup_viewDidAppear:animated];
+- (void)hr_popup_viewWillAppear:(BOOL)animated {
+    [self hr_popup_viewWillAppear:animated];
     @synchronized (self) {
         [HRPopupManager continueQueueWithObj:self];
         [HRPopupManager showPopupViewWaitDisplayWithVC:self];

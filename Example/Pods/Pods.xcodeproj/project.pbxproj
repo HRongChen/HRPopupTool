@@ -14,8 +14,7 @@
 		70CE7BBF807213C53FC4DFB16C522F1A /* HRPopupService.m in Sources */ = {isa = PBXBuildFile; fileRef = C12C537DA31885546DD4E0795334E40B /* HRPopupService.m */; };
 		74F74E5E40172DC345A7FE43AAF42350 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
 		7D46994666A1091016E59DB618FE6941 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
-		869C77B7242B7E5100B9429A /* UIViewController+HRPopup.h in Headers */ = {isa = PBXBuildFile; fileRef = 869C77B5242B7E5100B9429A /* UIViewController+HRPopup.h */; };
-		869C77B8242B7E5100B9429A /* UIViewController+HRPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 869C77B6242B7E5100B9429A /* UIViewController+HRPopup.m */; };
+		806FBA142EA90514E4259B461FA09F14 /* UIViewController+HRPopup.h in Headers */ = {isa = PBXBuildFile; fileRef = 942E6289B9722368AE60E43DFBB20ADD /* UIViewController+HRPopup.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89CACE1971EE91AE7827ABD3EF935F24 /* Pods-HRPopup_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AA31AD02EA1ED980F918726FB15CD189 /* Pods-HRPopup_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A65B09E7E1F005E0F985C09361859369 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
 		AD98E4011E5248B377D11CBA5628F629 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
@@ -24,6 +23,7 @@
 		B5E264B474C05236DBFF66F53AC8E1FC /* HRPopupConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = D413DE85522BBD68BAF4FC9AC08C7D6A /* HRPopupConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B698C7FF433E478334875AF0072C16A7 /* Pods-HRPopup_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E928A58C11D0F2048E2B53F12065691F /* Pods-HRPopup_Tests-dummy.m */; };
 		BEBE4F705EC35BF13F8130C14B99D935 /* HRPopup-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B21A090976E512866D08C6F8F22E1979 /* HRPopup-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1D34EF1352A95266D3F7D8895B0B995 /* UIViewController+HRPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 92557D14243BA9CEAC4CAD65986CBF64 /* UIViewController+HRPopup.m */; };
 		DCE648D15DF25ADA221B2F1D579AE57C /* HRPopupManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D366752330C0335CB4A530DDB2B0CD1 /* HRPopupManager.m */; };
 		E162A0C7ECC011CF2C6AB0383EE203B8 /* HRPopupManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2346C019E272CD7727ED096A45A69738 /* HRPopupManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E1B9E2D2C9456DC69C75ACE604A9FFBE /* HRPopupService.h in Headers */ = {isa = PBXBuildFile; fileRef = 17E10FAFC15ABC54004A38E95CCFD1ED /* HRPopupService.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -53,33 +53,33 @@
 		17E10FAFC15ABC54004A38E95CCFD1ED /* HRPopupService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HRPopupService.h; path = HRPopup/Classes/HRPopupService.h; sourceTree = "<group>"; };
 		1C790EF8CA270071E67CC5663AAA09A1 /* Pods-HRPopup_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HRPopup_Example-Info.plist"; sourceTree = "<group>"; };
 		2346C019E272CD7727ED096A45A69738 /* HRPopupManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HRPopupManager.h; path = HRPopup/Classes/HRPopupManager.h; sourceTree = "<group>"; };
-		23FA157D4CB47CC8755FB98C2EF7AF49 /* Pods_HRPopup_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HRPopup_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2695AC9036E9AF3A2A0C5BFB31CE1FE6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		23FA157D4CB47CC8755FB98C2EF7AF49 /* Pods_HRPopup_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HRPopup_Example.framework; path = "Pods-HRPopup_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2695AC9036E9AF3A2A0C5BFB31CE1FE6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		2BD29F916CC423AC55CD3ED66E6614A1 /* HRPopup.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HRPopup.modulemap; sourceTree = "<group>"; };
 		2CEF9B44E351C8C1A93439A48468E95E /* HRPopup-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HRPopup-prefix.pch"; sourceTree = "<group>"; };
 		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		34234C7EAECD32151254EF8ECFF78A22 /* HRPopupTypeDeclaration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HRPopupTypeDeclaration.h; path = HRPopup/Classes/HRPopupTypeDeclaration.h; sourceTree = "<group>"; };
 		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		45F063F5648643266B37C659AAF64C06 /* HRPopupConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HRPopupConfiguration.m; path = HRPopup/Classes/HRPopupConfiguration.m; sourceTree = "<group>"; };
-		49BEB2CB6BB56E91F53EC20A36CE01C7 /* Pods_HRPopup_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HRPopup_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49BEB2CB6BB56E91F53EC20A36CE01C7 /* Pods_HRPopup_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HRPopup_Tests.framework; path = "Pods-HRPopup_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CEA612C299D829A4B0F28FF49A37E04 /* Pods-HRPopup_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HRPopup_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		52B6A23A93E7048861CB259E7317DF7C /* Pods-HRPopup_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HRPopup_Tests.modulemap"; sourceTree = "<group>"; };
 		53A879C6EA022728CFC77C7FC804A686 /* HRPopupWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HRPopupWindow.m; path = HRPopup/Classes/HRPopupWindow.m; sourceTree = "<group>"; };
-		5D1793BFD5AA160A9803CB8B1332AAE5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		5D1793BFD5AA160A9803CB8B1332AAE5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		5DE230E8A1B0CCB496BD4628935EF95B /* Pods-HRPopup_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HRPopup_Example.release.xcconfig"; sourceTree = "<group>"; };
 		640A5EBE1A8E2F0A648ACDA7C73C54C7 /* HRPopupWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HRPopupWindow.h; path = HRPopup/Classes/HRPopupWindow.h; sourceTree = "<group>"; };
 		6D366752330C0335CB4A530DDB2B0CD1 /* HRPopupManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HRPopupManager.m; path = HRPopup/Classes/HRPopupManager.m; sourceTree = "<group>"; };
 		7453501B0AB2C52F42B030CD7597C1CD /* HRPopup-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HRPopup-Info.plist"; sourceTree = "<group>"; };
-		76C5B56CA7FD3AAE2DB76F24812322CD /* HRPopup.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = HRPopup.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		76C5B56CA7FD3AAE2DB76F24812322CD /* HRPopup.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = HRPopup.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		7AD81CBC04596308E975C7505FDF0826 /* Pods-HRPopup_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HRPopup_Example-dummy.m"; sourceTree = "<group>"; };
 		7D0F07795DAF0861427F8157202BFEB6 /* Pods-HRPopup_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HRPopup_Tests-umbrella.h"; sourceTree = "<group>"; };
-		869C77B5242B7E5100B9429A /* UIViewController+HRPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+HRPopup.h"; path = "HRPopup/Classes/UIViewController+HRPopup.h"; sourceTree = "<group>"; };
-		869C77B6242B7E5100B9429A /* UIViewController+HRPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+HRPopup.m"; path = "HRPopup/Classes/UIViewController+HRPopup.m"; sourceTree = "<group>"; };
 		8CABB241406C08E12A9BB3F029CF1036 /* Pods-HRPopup_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HRPopup_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		92557D14243BA9CEAC4CAD65986CBF64 /* UIViewController+HRPopup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+HRPopup.m"; path = "HRPopup/Classes/UIViewController+HRPopup.m"; sourceTree = "<group>"; };
+		942E6289B9722368AE60E43DFBB20ADD /* UIViewController+HRPopup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+HRPopup.h"; path = "HRPopup/Classes/UIViewController+HRPopup.h"; sourceTree = "<group>"; };
 		9B055B954A22212E8499AC96E1969C7C /* Pods-HRPopup_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HRPopup_Example-frameworks.sh"; sourceTree = "<group>"; };
 		9B7D72BDB4053C48E69BD973E634F5C9 /* Pods-HRPopup_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HRPopup_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9D183EDCBB3C0D5CA22E48FFF01FE9CD /* Pods-HRPopup_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HRPopup_Tests-Info.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A565D5D2E3CF8997042203BFC6B017B5 /* Pods-HRPopup_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HRPopup_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		AA31AD02EA1ED980F918726FB15CD189 /* Pods-HRPopup_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HRPopup_Example-umbrella.h"; sourceTree = "<group>"; };
 		B21A090976E512866D08C6F8F22E1979 /* HRPopup-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HRPopup-umbrella.h"; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 		C12C537DA31885546DD4E0795334E40B /* HRPopupService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HRPopupService.m; path = HRPopup/Classes/HRPopupService.m; sourceTree = "<group>"; };
 		C2F583CFA691DF4483D2B05765D484EB /* HRPopup.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HRPopup.xcconfig; sourceTree = "<group>"; };
 		D413DE85522BBD68BAF4FC9AC08C7D6A /* HRPopupConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HRPopupConfiguration.h; path = HRPopup/Classes/HRPopupConfiguration.h; sourceTree = "<group>"; };
-		DA7D0327298E5C2FE75F36A1DE97D52C /* HRPopup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HRPopup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA7D0327298E5C2FE75F36A1DE97D52C /* HRPopup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HRPopup.framework; path = HRPopup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5BAE57729E0FBEA0AF33A8695099B47 /* HRPopop.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HRPopop.h; path = HRPopup/Classes/HRPopop.h; sourceTree = "<group>"; };
 		E928A58C11D0F2048E2B53F12065691F /* Pods-HRPopup_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HRPopup_Tests-dummy.m"; sourceTree = "<group>"; };
 		ED2B28B3A11D50CB865B948912E30731 /* Pods-HRPopup_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HRPopup_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -168,8 +168,6 @@
 		3C6F9CEE3C6F118E016EDB4D4E08FD46 /* HRPopup */ = {
 			isa = PBXGroup;
 			children = (
-				869C77B5242B7E5100B9429A /* UIViewController+HRPopup.h */,
-				869C77B6242B7E5100B9429A /* UIViewController+HRPopup.m */,
 				E5BAE57729E0FBEA0AF33A8695099B47 /* HRPopop.h */,
 				D413DE85522BBD68BAF4FC9AC08C7D6A /* HRPopupConfiguration.h */,
 				45F063F5648643266B37C659AAF64C06 /* HRPopupConfiguration.m */,
@@ -180,6 +178,8 @@
 				34234C7EAECD32151254EF8ECFF78A22 /* HRPopupTypeDeclaration.h */,
 				640A5EBE1A8E2F0A648ACDA7C73C54C7 /* HRPopupWindow.h */,
 				53A879C6EA022728CFC77C7FC804A686 /* HRPopupWindow.m */,
+				942E6289B9722368AE60E43DFBB20ADD /* UIViewController+HRPopup.h */,
+				92557D14243BA9CEAC4CAD65986CBF64 /* UIViewController+HRPopup.m */,
 				5504BC6BFFE72FE71C21954FE31F2D72 /* Pod */,
 				1F37346AE15712B4567704FB4D6F7037 /* Support Files */,
 			);
@@ -279,8 +279,8 @@
 				E162A0C7ECC011CF2C6AB0383EE203B8 /* HRPopupManager.h in Headers */,
 				E1B9E2D2C9456DC69C75ACE604A9FFBE /* HRPopupService.h in Headers */,
 				31E6DDE03EBA1DDF1970CECD1C7BE5CE /* HRPopupTypeDeclaration.h in Headers */,
-				869C77B7242B7E5100B9429A /* UIViewController+HRPopup.h in Headers */,
 				B37AA6B71BC085ADDFFC51853B979896 /* HRPopupWindow.h in Headers */,
+				806FBA142EA90514E4259B461FA09F14 /* UIViewController+HRPopup.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,7 +429,7 @@
 				DCE648D15DF25ADA221B2F1D579AE57C /* HRPopupManager.m in Sources */,
 				70CE7BBF807213C53FC4DFB16C522F1A /* HRPopupService.m in Sources */,
 				AFA372CC8D7FAFBA577B38980AFA09E9 /* HRPopupWindow.m in Sources */,
-				869C77B8242B7E5100B9429A /* UIViewController+HRPopup.m in Sources */,
+				D1D34EF1352A95266D3F7D8895B0B995 /* UIViewController+HRPopup.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,7 +535,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
